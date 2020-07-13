@@ -39,7 +39,7 @@ let b:B =
 ```typescript
 type Wrap<T> = T extends { length: number } ? [T] : T
 
-// %inferred-type: boolean | [string] | [number[]]
+// inferred-type: boolean | [string] | [number[]]
 
 type Mixed1 = Wrap<boolean | string | number[]>
 type Mixed2 = Wrap<boolean> | Wrap<string> | Wrap<number[]>
@@ -59,15 +59,15 @@ They are equivalently.
 @snapend
 
 ```typescript
-// %inferred-type: "a" | "b"
+// inferred-type: "a" | "b"
 type Result = 'a' | 'b' | never
 
 type DropNumbers<T> = T extends number ? never : T
-// %inferred-type: "a" | "b"
+// inferred-type: "a" | "b"
 type Result1 = DropNumbers<1 | 'a' | 2 | 'b'>
 
 type KeepNumbers<T> = T extends number ? T : never
-// %inferred-type: 1 | 2
+// inferred-type: 1 | 2
 type Result2 = KeepNumbers<1 | 'a' | 2 | 'b'>
 ```
 
@@ -149,10 +149,10 @@ type Name2 = "string" | "number" | "boolean"
 ```typescript
 type Exclude<T, U> = T extends U ? never : T
 
-// %inferred-type: "a" | "b"
+// inferred-type: "a" | "b"
 type Result1 = Exclude<1 | 'a' | 2 | 'b', number>
 
-// %inferred-type: "a" | 2
+// inferred-type: "a" | 2
 type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
 ```
 @snapend
@@ -166,13 +166,13 @@ type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
 @snap[midpoint span-80 fragment]
 
 ```typescript
-type Extract<T, U> = T extends U ? T : never;
+type Extract<T, U> = T extends U ? T : never
 
-// %inferred-type: 1 | 2
-type Result1 = Extract<1 | 'a' | 2 | 'b', number>;
+// inferred-type: 1 | 2
+type Result1 = Extract<1 | 'a' | 2 | 'b', number>
 
-// %inferred-type: 1 | "b"
-type Result2 = Extract<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>;
+// inferred-type: 1 | "b"
+type Result2 = Extract<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
 ```
 @snapend
 
@@ -194,7 +194,7 @@ type Types = {
   a: 1, b: 2, c: 3, d: 4
 }
 
-// %inferred-type: { a: 1, b: 3 }
+// inferred-type: { a: 1, b: 3 }
 type Result = Pick<Types, 'a' | 'b'>
 ```
 @snapend
@@ -216,7 +216,7 @@ type Types = {
   a: 1, b: 2, c: 3, d: 4
 }
 
-// %inferred-type: { a: 1, b: 3 }
+// inferred-type: { a: 1, b: 3 }
 type Result = Omit<Types, 'a' | 'b'>
 ```
 @snapend
