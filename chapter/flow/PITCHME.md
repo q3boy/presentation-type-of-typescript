@@ -147,7 +147,6 @@ type Name2 = "string" | "number" | "boolean"
 @snap[midpoint span-80 fragment]
 
 ```typescript
-
 type Exclude<T, U> = T extends U ? never : T
 
 // %inferred-type: "a" | "b"
@@ -161,20 +160,19 @@ type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
 ---
 @snap[north span-100]
 <br>
-### Exclude<T, U>
+### Extract<T, U>
 @snapend
 
 @snap[midpoint span-80 fragment]
 
 ```typescript
+type Extract<T, U> = T extends U ? T : never;
 
-type Exclude<T, U> = T extends U ? never : T
+// %inferred-type: 1 | 2
+type Result1 = Extract<1 | 'a' | 2 | 'b', number>;
 
-// %inferred-type: "a" | "b"
-type Result1 = Exclude<1 | 'a' | 2 | 'b', number>
-
-// %inferred-type: "a" | 2
-type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
+// %inferred-type: 1 | "b"
+type Result2 = Extract<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>;
 ```
 @snapend
 

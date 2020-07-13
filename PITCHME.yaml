@@ -66,6 +66,8 @@ description : "Behind of the computing with types."
 
 code-line-numbers : false
 transition : fade
+published : true
+eager-loading : true
 # transition : zoom
 # title : "Type of TypeScript -- Behind of the computing with types"
 
