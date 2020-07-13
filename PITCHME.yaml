@@ -1,4 +1,5 @@
-# GitPitch In-60-Seconds - A Very Short Tutorial.
+#
+# GitPitch Quickstart Markdown Presentation
 #
 
 #
@@ -21,7 +22,7 @@ layout           : center
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
-highlight : tomorrow
+highlight : tomorrow-night
 
 #
 # Theme-Override Setting
@@ -33,7 +34,7 @@ theme-override: assets/css/PITCHME.css
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/logo.png
+logo : assets/img/youzan.png
 logo-position : top-left
 
 #
@@ -46,7 +47,7 @@ layout : center
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "GitPitch - The Fastest Way From Idea To Presentation"
+footnote : "Type of TypeScript (@廖恺 - 前端 - 业务中台)"
 
 #
 # Published Setting
@@ -55,10 +56,34 @@ footnote : "GitPitch - The Fastest Way From Idea To Presentation"
 published : true
 
 #
-# Twitter Card Settings [Pro Only]
+# Twitter Card Settings
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "GitPitch In 60 Seconds"
-description : "A short tutorial introducing GitPitch Markdown Presentations for Developers."
-thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
+title : "Type of TypeScript"
+description : "Behind of the computing with types."
+# thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
 
+
+code-line-numbers : false
+transition : fade
+# transition : zoom
+# title : "Type of TypeScript -- Behind of the computing with types"
+
+
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
+
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
+# theme            : template
+# theme-background : [ "#000000" ]
+# theme-headline   : [ "Montserrat", "#FBD95E", "none", "#FFFFFF", "100", "120", "15" ]
+# theme-byline     : [ "Raleway", "#FFFFFF", "none", "#FBD95E", "100", "110", "15" ]
+# theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#A0C865", "100", "100", "15" ]
+# theme-links      : [ "#F1C40F", "#5254F7" ]
+# theme-code       : [ "Source Code Pro", "100", "120" ]
+# highlight        : tomorrow-night
+# theme-controls   : [ "#C0C0C0" ]
+# theme-margins    : [ "0", "15px" ]
+# logo             : assets/img/youzan.png
+# logo-position    : top-left
+# layout           : center
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END

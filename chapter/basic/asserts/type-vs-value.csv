@@ -1,0 +1,3 @@
+,**Level**,**Available at**,**Operands**,**Operations**
+*Meta-values*,Program level,Runtime,Values,Functions
+*Types*,Type level,Compile time,Specific types,Generic types

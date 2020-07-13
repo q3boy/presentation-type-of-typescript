@@ -1,0 +1,4 @@
+**number**,The index property keys.
+**"0" | "1" | "2"**,The indices of the tuple elements.
+**"length"**,The name of the special instance property.
+**"pop" | "push" | ···**,The names of all Array methods.
