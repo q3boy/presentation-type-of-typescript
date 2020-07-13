@@ -60,15 +60,15 @@ They are equivalently.
 
 ```typescript
 // %inferred-type: "a" | "b"
-type Result = 'a' | 'b' | never;
+type Result = 'a' | 'b' | never
 
-type DropNumbers<T> = T extends number ? never : T;
+type DropNumbers<T> = T extends number ? never : T
 // %inferred-type: "a" | "b"
-type Result1 = DropNumbers<1 | 'a' | 2 | 'b'>;
+type Result1 = DropNumbers<1 | 'a' | 2 | 'b'>
 
-type KeepNumbers<T> = T extends number ? T : never;
+type KeepNumbers<T> = T extends number ? T : never
 // %inferred-type: 1 | 2
-type Result2 = KeepNumbers<1 | 'a' | 2 | 'b'>;
+type Result2 = KeepNumbers<1 | 'a' | 2 | 'b'>
 ```
 
 
@@ -148,13 +148,13 @@ type Name2 = "string" | "number" | "boolean"
 
 ```typescript
 
-type Exclude<T, U> = T extends U ? never : T;
+type Exclude<T, U> = T extends U ? never : T
 
 // %inferred-type: "a" | "b"
-type Result1 = Exclude<1 | 'a' | 2 | 'b', number>;
+type Result1 = Exclude<1 | 'a' | 2 | 'b', number>
 
 // %inferred-type: "a" | 2
-type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>;
+type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
 ```
 @snapend
 
@@ -168,13 +168,13 @@ type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>;
 
 ```typescript
 
-type Exclude<T, U> = T extends U ? never : T;
+type Exclude<T, U> = T extends U ? never : T
 
 // %inferred-type: "a" | "b"
-type Result1 = Exclude<1 | 'a' | 2 | 'b', number>;
+type Result1 = Exclude<1 | 'a' | 2 | 'b', number>
 
 // %inferred-type: "a" | 2
-type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>;
+type Result2 = Exclude<1 | 'a' | 2 | 'b', 1 | 'b' | 'c'>
 ```
 @snapend
 
@@ -197,7 +197,7 @@ type Types = {
 }
 
 // %inferred-type: { a: 1, b: 3 }
-type Result = Pick<Types, 'a' | 'b'>;
+type Result = Pick<Types, 'a' | 'b'>
 ```
 @snapend
 
@@ -212,14 +212,14 @@ type Result = Pick<Types, 'a' | 'b'>;
 ```typescript
 type Omit<T,
   K extends keyof any
-> = Pick<T, Exclude<keyof T, K>>;
+> = Pick<T, Exclude<keyof T, K>>
 
 type Types = {
   a: 1, b: 2, c: 3, d: 4
 }
 
 // %inferred-type: { a: 1, b: 3 }
-type Result = Omit<Types, 'a' | 'b'>;
+type Result = Omit<Types, 'a' | 'b'>
 ```
 @snapend
 
