@@ -24,7 +24,7 @@ type A = Wrap<string[]>
 type B = Wrap<number>
 
 let a:A = ['abc']
-let b:B =
+let b:B = number
 ```
 <br>
 @snapend
