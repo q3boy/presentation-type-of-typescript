@@ -163,7 +163,7 @@ type KeysUnion = keyof (A | B)
 @fa[question-circle fa-pulse]() What's the inferred type of @color[white](`KeysBoth`) & @color[white](`KeysUnion`).
 @snapend
 
-@snap[midpoint span-50 fragment]
+@snap[midpoint span-70 fragment]
 ```typescript
 type A = { a: number, shared: string }
 type B = { b: number, shared: string }
