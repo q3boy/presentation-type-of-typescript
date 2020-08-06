@@ -148,7 +148,7 @@ type Keys = string | number
 ### Case 5
 @snapend
 
-@snap[midpoint span-50]
+@snap[midpoint span-70]
 ```typescript
 type A = { a: number, shared: string }
 type B = { b: number, shared: string }
