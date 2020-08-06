@@ -89,7 +89,7 @@ type Both = A & B;
 
 @snap[south span-100 text-gray text-10]
 @[1-4, zoom-14](Declare some types, then set an union type)
-@[6, zoom-16](Use type @color[white](`Union`) in function.)
+@[9, zoom-16](Use type @color[white](`Union`) in function.)
 @[11, zoom-16](Got a @color[red](type error), args.propB only in TypeB.)
 @[13, zoom-16](We can use @color[white](type conversion) to fix it (@color[red](this is not safely)).)
 @[6-7,14, zoom-16](Or use @color[white](type guards).)
