@@ -194,7 +194,7 @@ type Types = {
   a: 1, b: 2, c: 3, d: 4
 }
 
-// inferred-type: { a: 1, b: 3 }
+// inferred-type: { a: 1, b: 2 }
 type Result = Pick<Types, 'a' | 'b'>
 ```
 @snapend
@@ -216,7 +216,7 @@ type Types = {
   a: 1, b: 2, c: 3, d: 4
 }
 
-// inferred-type: { a: 1, b: 3 }
+// inferred-type: { c: 3, d: 4 }
 type Result = Omit<Types, 'a' | 'b'>
 ```
 @snapend
